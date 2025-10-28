@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --text: #081c15;
+  --secondary-text: #2d6a4f;
+  --bg: #f8f9fa;
+  --card-bg: #b0ce88;
+  --btn-bg: #1b4332;
+  --btn-text: #ffffff;
+  --border-color: #081c15;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 100%;
+    padding: 0 8px;
+  }
+  .grid-class {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .grid-class.favoritespage {
+    grid-template-columns: 1fr;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 16px;
+    padding: 0 12px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 4px;
+  }
+  .grid-class {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 4px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 0 8px;
+    height: 36px;
+  }
+  .pageNotFoundHeading {
+    font-size: 60px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+
+.full-flx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h-screen {
+  height: calc(100vh - 72px);
+}
+
+::placeholder {
+  color: #081c1544;
+}
+
+main {
+  margin-top: 72px;
+}
+
+.btn {
+  height: 46px;
+  border: 1px solid;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  font-size: 18px;
+  font-weight: 600;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  cursor: pointer;
+}
+
+.grid-class {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 10px;
+}
+.grid-class.favoritespage {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pageNotFoundHeading {
+  font-size: 130px;
+  font-weight: bold;
+}

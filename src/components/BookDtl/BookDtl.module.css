@@ -1,0 +1,88 @@
+.bookMain {
+        margin-top: 24px;
+        max-width: 990px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 32px 15px;
+        border-radius: 10px;
+        /* background-color: var(--card-bg); */
+        border: 2px solid;
+}
+
+@media (max-width: 900px) {
+    .bookMain {
+        max-width: 100%;
+        padding: 16px 8px;
+        border-radius: 8px;
+    }
+    .top {
+        flex-direction: column;
+    }
+    .imgbox {
+        min-width: 96px;
+        max-height: 140px;
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+    .text {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .bookMain {
+        padding: 8px 4px;
+        border-radius: 6px;
+    }
+    .imgbox {
+        min-width: 72px;
+        max-height: 100px;
+        margin-bottom: 8px;
+    }
+    .text {
+        font-size: 14px;
+    }
+    .icon {
+        top: 8px;
+        right: 8px;
+    }
+}
+.top {
+    display: flex;
+    position: relative;
+}
+.icon {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 100;
+}
+.text {
+    width: 100%;
+    padding-right: 30px;
+}
+.imgbox {
+    min-width: 128px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.imgbox img {
+    width: 100%;
+    height: 100%;
+}
+.text {
+    min-height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+h4 {
+    font-weight: 200;
+}
+.description {
+    margin-top: 24px;
+}
+.description p + p {
+    margin-top: 18px;
+}
