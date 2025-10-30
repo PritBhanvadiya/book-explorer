@@ -1,10 +1,11 @@
+
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home.jsx";
 import Favorites from "../pages/Favorites.jsx";
-import React, { lazy, Suspense } from "react";
-const BookDetails = lazy(() => import("../pages/BookDetails.jsx"));
+import { lazy, Suspense } from "react";
 import PageNotFound from "../pages/PageNotFound.jsx";
 import Loading from "../components/Loading/Loading.jsx";
+const BookDetails = lazy(() => import("../pages/BookDetails.jsx"));
 
 function AppRoutes() {
   return (
